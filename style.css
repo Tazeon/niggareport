@@ -1,0 +1,26 @@
+p{
+    color:red;
+    text-align: center;
+}
+
+/* Element Selecter 
+ไม่ควร เพราะว่า cssแบบเดียวกัน*/
+div {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+/* Class Selecter */
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: goldenrod;
+}
+
+/* ID seletor */
+#nin{
+    width: 100px;
+    height: 100px;
+    background-color: brown;   
+}
