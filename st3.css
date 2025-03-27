@@ -55,7 +55,23 @@
 }
 
 div{
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
     height: 150px;
     background-color: beige;
+    padding: 20px;
+    border: 10px solid brown;
+    border-radius: 10px;
+    margin: 50px 10px 15px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
+
+
+
+
+
