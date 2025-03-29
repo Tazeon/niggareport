@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <!-- Inline Script -->
+    <button onclick="alert('Touch me nigga');">Touch me  nigga</button>
+
+    <button onclick="showMS();">Touch My External</button>
+
+    <!-- Internal Script -->
+    <!-- <script>
+        function showMS() {
+            alert("This is Internal Nigga");
+        }
+    </script> -->
+
+    <!-- External Script -->
+     <script src="script.js">
+        
+     </script>
+
+     <hr>
+
+    <p id="demo">This is paragraph</p>
+    <button type="button" onclick="MyFunc();">Change Content</button>
+
+    <script>
+        document.write("Hello Nig");
+        // alert("Hello Nig");
+
+        function MyFunc(){
+            document.getElementById("demo").innerHTML = "Hello World";
+            
+        }
+
+        console.log("Hello from console");
+    </script>
+
+    <hr>
+
+    <script> 
+        // var ประกาศแล้ว เปลี่ยนได้ ไม่นิยมใช้
+        var name = "John Doe";
+        name = "Jane Doe";
+        console.log(name);
+
+        // let ประกาศแล้ว เปลี่ยนได้ เหมอืน var แต่เก่ากว่า ประกาศซ้ำไม่ได้ แต่เปลี่ยนค่าได้
+        let x=5;
+        let y=10;
+        let z = x+y
+        console.log(z);
+
+        // const เป็นค่าคงที่ เปลี่ยนไม่ได้
+        const a =10;
+        const b=20;
+        const c= a+b;
+        console.log(c);
+    </script>
+
+
+    <script>
+            // Global Scope
+        {
+            // Block Scope
+            var g = 5;
+            // const let
+        }
+
+        console.log(g);
+
+    </script>
+
+    <hr>
+    
+
+
+
+
+</body>
+</html>
