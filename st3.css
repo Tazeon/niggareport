@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 .dotted{
     border-style: dotted;
     border-top-style: solid;
@@ -164,5 +169,66 @@ span{
     /* display:none; */
 }
 
+.con{
+    max-width: 960px;
+    margin: 0 ;
+    background-color: yellow;
+}
+
+.bot{
+    width: 200px;
+    height: 50px;
+    background-color: blanchedalmond;
+    /* position: static; */
+    /* position: relative; */
+    position: fixed;
+    /* position: absolute;  */
+    /* ใช้ในกล่องลูก รีเลทีฟใส่กล่องแม่ แล้วมันจะไปล้อคตำแหน่งในกล่องลูก */
+    top : 20px;
+    right : 20px;
+}
+
+
+
+/* 
+
+z-index : 1;
+ทำให้ไปอยู่ด้านบน 
+ยิ่งมีค่ามาก ก็จะอยู่บน มีค่าน้อย ก็โดนทับ ตั้งตามใจ
+
+overflow : hidden;
+ตัดคอนเท้นที่เกินกล่อง
+
+overflow : scroll;
+เลื่อนข้อความในกล่องได้
+
+overflow : autp;
+เลื่อนข้อความในกล่องได้ มีแทบให้เลื่อน
+
+
+*/
+
+
+/* 
+
+Pseudo-Class กำหนดสถานะพิเศษให้คลาส
+
+selector:hover{
+    background-color : blue;
+}
+
+Pseudo-element
+
+p::first-line{
+    color : red;
+    font-size : 24px;
+    font-weight : bold;
+}
+
+
+box-sizing : border-box;
+ทำให้ element ขนาดเดิม
+
+*/
 
 
