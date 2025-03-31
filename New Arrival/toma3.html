@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS3</title>
+</head>
+<body id="myBD">
+
+    <button onclick="alert('stupid nig')">Click nig</button>
+    <p id = "myTXT">Chaneg this text</p>
+    <button id = "myBTN">Click to change txt</button>
+    <button id = "myCLR">Change COLOUR</button>
+
+    <script>
+
+        const button = document.getElementById("myBTN");
+        const myCLR = document.getElementById("myCLR");
+
+        button.addEventListener("click",function(){
+            const myTXT = document.getElementById("myTXT");
+            myTXT.textContent = "This txt change nigga";
+        })
+
+        myCLR.addEventListener("mouseover", function(){
+            const mBD = document.getElementById("myBD");
+            mBD.style.backgroundColor = "yellow";
+        })
+
+        myCLR.addEventListener("mouseout", function(){
+            const mBD = document.getElementById("myBD");
+            mBD.style.backgroundColor = "white";
+        })
+
+    </script>
+</body>
+</html>
