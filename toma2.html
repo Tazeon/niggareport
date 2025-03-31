@@ -27,7 +27,27 @@
         car.displayInfo();
 
         const date=  new Date();
-        console.log(data);
+        console.log(date);
+        
+        //Object Constructer
+        function rod(make,model,year){
+            this.make = make;
+            this.model = model;
+            this.year = year ;
+            this.displayInfo = function() {
+                console.log(`${this.make} ${this.model}, Year: ${this.year} `)
+            }
+        };
+
+        // New Keyword
+        const car1 = new rod("Niga","E-rank",2549);
+        const car2 = new rod("Ifon","E-rank",2549);
+        console.log(car1.make);
+        console.log(car2.make);
+
+        car1.displayInfo();
+        car2.displayInfo();
+        
 
     </script>
 </body>
