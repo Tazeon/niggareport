@@ -12,10 +12,23 @@
         }
         myf(4,5);
 
-        //Object Literal
+        // Object Literal
         const car = {
-            make:"Merce"
+            make:"Merce",
+            model:"A-Class",
+            year:2024,
+            displayInfo: function(){
+                console.log(`${this.make} ${this.model}, Year: ${this.year} `)
+            }
         };
+
+        console.log(car.make);
+        console.log(car.model);
+        car.displayInfo();
+
+        const date=  new Date();
+        console.log(data);
+
     </script>
 </body>
 </html>
