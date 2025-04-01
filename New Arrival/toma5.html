@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS5</title>
+</head>
+<body>
+    <script>
+
+        // forEach
+        const number = [1,2,3,4,5]
+        number.forEach(function(i){
+            console.log(i)
+        })
+
+        const double = number.map(function(i){
+            return i*2
+        })
+        console.log(double);
+
+        const even = number.filter(function(i){
+            return i % 2 === 0;
+        })
+        console.log(even);
+
+        const sum = number.reduce(function(total,number){
+            console.log(total,number)
+            return total + number;
+            // 1+2 = 3
+            // 3+3 = 4
+            // 6+4 = 10
+            // 10+5 =15
+        },0);
+        console.log(sum)
+
+        // some(); same same as filter but SOME at least 1 not All
+        // every(); same same as filter but ONLY ALL
+
+        //find(); same as filter but only first one
+        //find(); same as filter INDEX but only first one INDEX
+
+
+
+
+
+    </script>
+</body>
+</html>
