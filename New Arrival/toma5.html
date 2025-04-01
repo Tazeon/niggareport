@@ -65,7 +65,48 @@
             default:
                 dayName="None"
                 break;
-        }console.log(dayName)
+        }console.log(dayName);
+
+        // Ternaly Operator
+        let n = 20;
+        let message = (age >= 18) ? "You are black" : "You are White";
+        console.log(message)
+
+        // For loop
+        let nigga = ['n','i','g','g','a'];
+        for(let i =0 ; i < nigga.length ; i++ ){
+            console.log(nigga[i]);
+        }
+
+
+        let person = {
+            name:"jane",
+            age:30,
+            city:"Thai"
+        }
+        // For in loop KEY
+        for(let i in person){
+            console.log(i + ' : ' + person[i])
+        }
+
+        // for Loop
+        for(let i of nigga){
+            console.log(i);
+        }
+
+        // While loop
+        let i = 0;
+        while(i < 5){
+            console.log("numba 2 :"+nigga[i]);
+            i++;
+        }
+
+        // do While Loop ทำก่อนเงื่อนไข
+        let g = 0;
+        do{
+            console.log(g);
+            g++;
+        }while(g<5);
 
 
     </script>
